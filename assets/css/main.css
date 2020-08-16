@@ -109,6 +109,11 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+	img {
+		margin-top: 28px;
+		margin-right: -1px;
+	}
+
 /* Type */
 
 	html {
@@ -121,12 +126,22 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			img {
+				margin-top: 22px;
+				margin-right: -1px;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
 
 			html {
 				font-size: 11pt;
+			}
+
+			img {
+				margin-top: 18px;
+				margin-right: -1px;
 			}
 
 		}
@@ -172,16 +187,29 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h3 {
 		color: #ffffff;
 		font-weight: 600;
-		line-height: 1.5;
+		line-height: 1;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		text-align: left;
 	}
+
+	h1, h2, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 1;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+		text-align: center;
+	}
+	
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -642,6 +670,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		image-rendering: -webkit-optimize-contrast;
 	}
 
 		.image:before {
@@ -1140,9 +1169,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1321,14 +1353,19 @@ input, select, textarea {
 				overflow: hidden;
 			}
 
+			.inner {
+				max-width: 1100px;
+				text-align: justify;
+			}
+
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
 				}
 
 			#header .content p {
 				text-transform: uppercase;
-				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				letter-spacing: 0.1rem;
+				font-size: 0.55rem;
 				line-height: 2;
 			}
 
